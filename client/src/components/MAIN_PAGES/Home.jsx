@@ -11,9 +11,7 @@ export default function Favourite({ recipes }) {
     "/img/gallery/img_4.jpg",
     "/img/gallery/img_5.jpg",
     "/img/gallery/img_6.jpg",
-    "/img/gallery/img_7.jpg",
-    "/img/gallery/img_8.jpg",
-    "/img/gallery/img_9.jpg"
+
   ]
   return (
     <>
@@ -24,7 +22,7 @@ export default function Favourite({ recipes }) {
             <div className="section hero">
               <div className="col typography">
                 <h1 className="title">What Are We About</h1>
-                <p className="info">Elevate your culinary journey with our diverse, free recipes from around the globe. Indulge your taste buds and nourish your soul. Uncover the art of flavor without any cost – your passport to a world of gastronomic bliss awaits. Start your SpiceSafari adventure today!</p>
+                <p className="info">Embark on a culinary odyssey with TasteTreasure.com! 🌍✨ Explore a world of delectable and complimentary recipes that span the globe. 🍲 Delight your taste buds and feed your soul as you dive into a rich tapestry of flavors. 🎨 Our platform is your gateway to the art of taste, providing you with an immersive culinary experience without any expense. 🆓 Join us in savoring the joy of gastronomy – your passport to a world of epicurean delight begins at TasteTreasure.com. 🌟 Start your flavorful journey today! 🍽️✈️!</p>
                 <Link className="btn btn-dark " to="/recipes">explore now</Link>
               </div>
               <div className="col gallery">

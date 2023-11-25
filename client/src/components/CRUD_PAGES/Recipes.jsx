@@ -1,4 +1,3 @@
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from "react";
@@ -18,24 +17,23 @@ export default function Recipies() {
         };
         fetchRecipes();
     }, []);
+    
     return (
         <>
             <div className="container">
-                <div className="row row-cols-1 row-cols-md-3 g-4 m-5" >
+                <div className="row row-cols-1 row-cols-md-3 g-4 m-5">
                     {recipes.length === 0 ? (
-                        <div>
-                            <p className='text-center'>
+                        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                            <h2 className='text-center' style={{ color: 'white' }}>
                                 Nothing to show, please search something!
-                            </p>
+                            </h2>
                         </div>
                     ) : null}
                     {recipes?.length > 0 &&
-                        recipes.map((recipes) => <RecipiesCard recipes={recipes} key={recipes._id} />)}
+                        recipes.map((recipe) => <RecipiesCard recipes={recipe} key={recipe._id} />)}
                 </div>
             </div>
             <ToastContainer />
         </>
     );
 };
-
-;
